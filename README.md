@@ -12,6 +12,7 @@ This project implements a data pipeline that:
 
 ## Project Structure
 
+```bash
 youtube-data-pipeline/
 ├── data/
 │   └── raw_videos.csv       # Input data (you need to provide this)
@@ -28,17 +29,18 @@ youtube-data-pipeline/
 ├── README.md                # This file
 └── requirements.txt         # Python dependencies
 
-```plaintext
+```
 
 ## Setup and Installation
 
 1. Clone this repository
 2. Install the required dependencies:
- ```
-
+ ```bash
+python -m venv venv
+source venv/Scripts/activate
 pip install -r requirements.txt
+```
 
-```plaintext
 3. Place your YouTube dataset in `data/raw_videos.csv`
 - You can download a dataset from Kaggle, such as [YouTube Trending Videos](https://www.kaggle.com/datasets/datasnaek/youtube-new)
 
@@ -48,7 +50,6 @@ To run the complete pipeline:
 
 ```bash
 python run_pipeline.py
- ```
 ```
 
 Or run individual steps:
